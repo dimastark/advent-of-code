@@ -1,0 +1,15 @@
+[package]
+name = "year2020"
+version = "0.1.0"
+authors = ["Dima Starkov <dvstark@yandex.ru>"]
+edition = "2018"
+
+[[bin]]
+name = "task1"
+path = "src/task1.rs"
+
+[[bin]]
+name = "task2"
+path = "src/task2.rs"
+
+[dependencies]
