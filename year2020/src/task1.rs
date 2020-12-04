@@ -20,7 +20,7 @@ fn main() {
     let expected_result = 2020;
 
     let input: Vec<i32> = include_str!("task1.txt")
-        .split("\n")
+        .lines()
         .map(|line| line.parse().expect("input should contains numbers"))
         .collect();
 

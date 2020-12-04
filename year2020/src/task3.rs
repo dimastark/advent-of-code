@@ -17,7 +17,7 @@ fn get_trees_count(m: &Vec<Vec<bool>>, dx: usize, dy: usize) -> i32 {
 
 fn main() {
     let tree_matrix: Vec<Vec<bool>> = include_str!("task3.txt")
-        .split("\n")
+        .lines()
         .map(|line| line.chars().map(|c| c == '#').collect())
         .collect();
 

@@ -52,7 +52,7 @@ impl FromStr for PasswordRule {
 }
 
 fn main() {
-    let input = include_str!("task2.txt").split("\n");
+    let input = include_str!("task2.txt").lines();
 
     let mut valid_password_count = 0;
     for line in input {
