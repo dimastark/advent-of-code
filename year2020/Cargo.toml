@@ -20,5 +20,9 @@ path = "src/task3.rs"
 name = "task4"
 path = "src/task4.rs"
 
+[[bin]]
+name = "task5"
+path = "src/task5.rs"
+
 [dependencies]
 regex = "1"
