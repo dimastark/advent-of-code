@@ -25,8 +25,14 @@ fn main() {
         .collect();
 
     // First star
-    let (number, complement_number) = find_complement_numbers(&input, &expected_result).expect("answer not found");
-    println!("{} * {} = {}", number, complement_number, number * complement_number);
+    let (number, complement_number) =
+        find_complement_numbers(&input, &expected_result).expect("answer not found");
+    println!(
+        "{} * {} = {}",
+        number,
+        complement_number,
+        number * complement_number
+    );
 
     // Second star
     for (i, another_number) in input.iter().enumerate() {
@@ -35,7 +41,13 @@ fn main() {
         match find_complement_numbers(&input[i..], &expected_result) {
             None => (),
             Some((number, complement_number)) => {
-                println!("{} * {} * {} = {}", another_number, number, complement_number, another_number * number * complement_number);
+                println!(
+                    "{} * {} * {} = {}",
+                    another_number,
+                    number,
+                    complement_number,
+                    another_number * number * complement_number
+                );
                 return;
             }
         }
