@@ -52,5 +52,12 @@ path = "src/task11.rs"
 name = "task12"
 path = "src/task12.rs"
 
+[[bin]]
+name = "task13"
+path = "src/task13.rs"
+
 [dependencies]
+itertools = "0.8"
+num-bigint = "0.3"
+num-traits = "0.2"
 regex = "1"
