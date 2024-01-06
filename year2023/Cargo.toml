@@ -16,6 +16,10 @@ path = "src/task2.rs"
 name = "task3"
 path = "src/task3.rs"
 
+[[bin]]
+name = "task4"
+path = "src/task4.rs"
+
 [dependencies]
 itertools = "0.12.0"
 onig = "6.4.0"
